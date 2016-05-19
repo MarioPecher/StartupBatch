@@ -1,1 +1,3 @@
 # StartupBatch
+
+shell:startup
