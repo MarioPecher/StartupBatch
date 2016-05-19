@@ -1,15 +1,20 @@
 :: Terminal-Desktop Statup Batch
-:: Version 0.12
+:: Version 0.13
 
 :: erstellt durch Mario Pecher
 :: erstellt am 26.04.2016
 
-:: ge‰ndert durch Mario Pecher
-:: ge‰ndert am 26.04.2016
+:: ge√§ndert durch Mario Pecher
+:: ge√§ndert am 19.05.2016
 
 :: Version History
 ::------------------------
 :: Version 0.2 ???
+::------------------------
+:: Version 0.13
+:: 	Add Startaufruf
+::		IE
+::
 ::------------------------
 :: Version 0.12
 :: 	Fix Startaufruf
@@ -44,3 +49,7 @@ start "Firefox" "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
 :: Nagstamon start
 cd "C:\Program Files (x86)\Nagstamon"
 start "Nagstamon" "nagstamon.exe"
+
+:: IE start
+cd "C:\Program Files\Internet Explorer"
+start "IE" "iexplore.exe"
