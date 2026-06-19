@@ -1,28 +1,44 @@
 :: Desktop Statup Batch
-:: Version 0.1
+:: Version 1.01
 
 :: erstellt durch Mario Pecher
 :: erstellt am 26.04.2016
 
 :: geändert durch Mario Pecher
-:: geändert am 26.04.2016
+:: geändert am 19.06.2026
 
 :: Version History
 ::------------------------
-:: Version 0.2 ???
+:: Version 1.02 ???
 ::------------------------
-:: Version 0.1
+:: Version 1.01
+::  add explorer
 ::	add Taskmanager
-::	add Outlook
-::	add Firefox
+::	add Webex
+::  add Edge
+::  add Citrix Connection Center
+::  add Outlook
+::	add GIT Extensions
 ::
 ::------------------------
 
+:: Explorer start
+start "Explorer" "C:\Windows\explorer.exe"
+
 :: Taskmanager start
-::"C:\Windows\System32\taskmgr.exe"
+start "Taskmanager" "C:\Windows\System32\taskmgr.exe"
+
+:: Webex start
+start "Webex" "C:\Program Files\Cisco Spark\CiscoCollabHost.exe"
+
+:: Edge start
+start "Edge" "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory=Default
+
+:: Citrix Connection Center start
+start "Citrix Connection Center" "C:\Program Files (x86)\Citrix\ICA Client\concentr.exe"
 
 :: Outlook start
-::"C:\Program Files (x86)\Microsoft Office\Office12\OUTLOOK.exe"
+start "Outlook" "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"
 
-:: Firefox start
-"C:\Programm Files (x86)\Mozilla Firefox\firefox.exe"
+:: GIT Extensions start
+start "GIT Extensions" "C:\Program Files (x86)\GitExtensions\GitExtensions.exe"
